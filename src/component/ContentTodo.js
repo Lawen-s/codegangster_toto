@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./ContentTodo.css";
-import dummy from "../static/dummyData";
 
 const ContentTodo = ({ datas, setDatas }) => {
-
-
 
     const deleteTodo = (some, deleteId) => {
         const filterTodo = datas.filter((todo) => {
@@ -13,14 +10,43 @@ const ContentTodo = ({ datas, setDatas }) => {
         setDatas(filterTodo);
     };
 
-    const checkboxLine = (event) => {
-        let result = '';
-        if (event.target.checked) {
+    const [isChecked, setIsChecked] = useState(false);
+    // const [checkedItems, setCheckedItems] = useState(new Set());
+
+    const checkHandler = ({ target }) => {
+        setIsChecked(!isChecked);
+        checkedItemHandler(target.parentNode, target.checked);
+    };
+
+    const checkedItemHandler = (box, isChecked) => {
+        if (isChecked) {
+            // checkedItems.add(id);
+            // setCheckedItems(checkedItems)
+            box.parentNode.parentNode.parentNode.parentNode.children[1].className = "todoContent checked";
         } else {
-            result = "";
+            // checkedItems.delete(id);
+            // setCheckedItems(checkedItems);
+            box.parentNode.parentNode.parentNode.parentNode.children[1].className = "todoContent unChecked";
         }
-        console.log(event);
+
     }
+
+
+    // let filterCheck = "";
+
+    // const checkboxHandler = (id) => {
+
+    //     datas.filter((todo) => {
+
+    //         if (id === todo.id) {
+    //             filterCheck = "unChecked";
+    //         }
+    //         else {
+    //             filterCheck = "checked"
+    //         }
+    //     }
+    //     )
+    // }
     // text-decoration:line-through
     return (
         <div className="todo_Container">
@@ -35,7 +61,7 @@ const ContentTodo = ({ datas, setDatas }) => {
                                 <div className="buttons">
                                     <span className="todoContent_checkbox">
                                         <div className="checkbox_group">
-                                            <input type="checkbox" id="check" onClick={checkboxLine} />
+                                            <input type="checkbox" id="check" onClick={(e) => checkHandler(e)} />
                                         </div>
                                     </span>
                                     <span className="todoContent_delete">
@@ -50,6 +76,7 @@ const ContentTodo = ({ datas, setDatas }) => {
 
                             <div className="todoContent">
                                 {todo.content}
+                                {/* {checked ? <div className="checked">{todo.content}</div> : <div className="unChecked">{todo.content}</div>} */}
                             </div>
 
                         </li >

@@ -44,6 +44,14 @@
   text-align: center;
 }
 
+.checked {
+  text-decoration: line-through;
+}
+
+.unChecked {
+  text-decoration: none;
+}
+
 input[type="checkbox"] {
   margin-left: 15px;
   appearance: none;
