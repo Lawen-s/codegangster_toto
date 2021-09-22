@@ -1,9 +1,9 @@
 .todo_Container {
-  display: inline-flex;
+  display: block;
 }
 
 .todoList {
-  display: inline-table;
+  display: block;
   list-style: none;
   background-color: white;
   border-radius: 45px;
@@ -30,12 +30,12 @@
 }
 
 .createTodo {
-  display: inline;
-  font-size: 15px;
-  text-shadow: gray 2px 2px 2px;
-  opacity: 0.2;
-  margin: 7px;
-  margin-top: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: small;
+  opacity: 0.5;
 }
 
 .todoContent {
@@ -45,14 +45,17 @@
 }
 
 .checked {
-  text-decoration: line-through;
+  text-decoration: line-through 4px;
+  opacity: 0.3;
+  transition: 500ms ease all;
 }
 
 .unChecked {
   text-decoration: none;
+  transition: 500ms ease all;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   margin-left: 15px;
   appearance: none;
   -webkit-appearance: none;
@@ -69,24 +72,24 @@ input[type="checkbox"] {
   transition: 500ms ease all;
 }
 
-input[type="checkbox"]::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f00c";
+input[type='checkbox']::after {
+  font-family: 'Font Awesome 5 Free';
+  content: '\f00c';
   font-weight: 900;
   font-size: 20px;
   color: white;
   display: none;
 }
 
-input[type="checkbox"]:hover {
+input[type='checkbox']:hover {
   box-shadow: gray 2px 2px 2px;
 }
 
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   background-color: #5bcd3e;
 }
 
-input[type="checkbox"]:checked::after {
+input[type='checkbox']:checked::after {
   display: block;
 }
 
@@ -97,8 +100,7 @@ input[type="checkbox"]:checked::after {
   height: 30px;
   width: 30px;
   background-color: white;
-  border: solid;
-  border-radius: 8px;
+  border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -108,7 +110,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .todoContent_deleteButton:hover {
-  box-shadow: gray 2px 2px 2px;
   color: #e63946;
-  border: solid black;
+  text-shadow: #a0a0a0 0 1px 1px;
+  font-weight: 800;
 }

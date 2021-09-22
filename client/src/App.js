@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { BrowserRouter, Switch } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+
 
 import ContentTodo from "./component/ContentTodo";
 import CountClear from "./component/CountClear";
@@ -27,7 +28,13 @@ function App() {
           <Header />
           <Filterbar datas={datas} setDatas={setDatas} />
           <MakeTodo datas={datas} setDatas={setDatas} />
-          <CountClear datas={datas} setDatas={setDatas} isClear={isClear} handleClear={handleClear} />
+
+          <CountClear
+            datas={datas}
+            setDatas={setDatas}
+            isClear={isClear}
+            handleClear={handleClear} />
+
           <div className="listPart">
             <ContentTodo datas={datas} setDatas={setDatas} />
           </div>
