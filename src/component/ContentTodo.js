@@ -28,26 +28,19 @@ const ContentTodo = ({ datas, setDatas }) => {
             // setCheckedItems(checkedItems);
             box.parentNode.parentNode.parentNode.parentNode.children[1].className = "todoContent unChecked";
         }
-
     }
 
-
-    // let filterCheck = "";
-
-    // const checkboxHandler = (id) => {
-
-    //     datas.filter((todo) => {
-
-    //         if (id === todo.id) {
-    //             filterCheck = "unChecked";
-    //         }
-    //         else {
-    //             filterCheck = "checked"
-    //         }
+    // const checkHandler = ({ target }) => {
+    //     setIsChecked(!isChecked);
+    //     if (target.checked) {
+    //       target.parentNode.parentNode.parentNode.parentNode.parentNode.children[1].className =
+    //         "checked";
+    //     } else {
+    //       target.parentNode.parentNode.parentNode.parentNode.parentNode.children[1].className =
+    //         "unChecked";
     //     }
-    //     )
-    // }
-    // text-decoration:line-through
+    //   };
+
     return (
         <div className="todo_Container">
             <ul className="todoLists">
