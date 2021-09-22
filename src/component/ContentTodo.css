@@ -29,6 +29,15 @@
   margin-top: 0;
 }
 
+.createTodo {
+  display: inline;
+  font-size: 15px;
+  text-shadow: gray 2px 2px 2px;
+  opacity: 0.2;
+  margin: 7px;
+  margin-top: 2;
+}
+
 .todoContent {
   font-size: 30px;
   margin-top: 10px;
