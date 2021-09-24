@@ -80,7 +80,7 @@
 
 .MakeTodo_input--submit:before,
 .MakeTodo_input--submit:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   background: #bdb2ff;

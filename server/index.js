@@ -17,11 +17,12 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get('/', controllers.get);
 
-app.post('/', controllers.post);
+app.get('/todos', controllers.get);
 
-app.delete('/', controllers.delete);
+app.post('/todos', controllers.post);
+
+app.delete('/todos', controllers.delete);
 
 let server = app.listen(port, () => {
   console.log(`server running on ${port}`);

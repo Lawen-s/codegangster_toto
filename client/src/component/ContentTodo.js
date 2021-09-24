@@ -24,7 +24,7 @@ const ContentTodo = ({ datas, setDatas }) => {
   };
 
   const deleteTodo = (some, deleteId) => {
-    axios.delete('http://localhost:4000', { data: { id: deleteId } });
+    axios.delete('http://localhost:4000/todos', { data: { id: deleteId } });
     const filterTodo = datas.filter((todo) => {
       return todo.id !== deleteId;
     });

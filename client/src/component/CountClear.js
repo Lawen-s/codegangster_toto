@@ -1,8 +1,10 @@
 import React from 'react';
 import './CountClear.css';
 import dummyData from '../static/dummyData';
+import axios from 'axios';
 
 const CountClear = ({ datas, setDatas }) => {
+  axios.delete('http://localhost:4000/todos');
   const handleClear = () => {
     setDatas([]);
   };
