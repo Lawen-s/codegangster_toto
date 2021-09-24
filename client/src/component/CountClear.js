@@ -2,7 +2,10 @@ import React from 'react';
 import './CountClear.css';
 import dummyData from '../static/dummyData';
 
-const CountClear = ({ isClear, handleClear, datas, setDatas }) => {
+const CountClear = ({ datas, setDatas }) => {
+  const handleClear = () => {
+    setDatas([]);
+  };
 
   return (
 
@@ -11,8 +14,7 @@ const CountClear = ({ isClear, handleClear, datas, setDatas }) => {
         : <span className="span--remainTodos">남은 할 일: {datas.length}</span>}
       <button onClick={handleClear} className="btn--clearAll">Clear All</button>
     </div>
-
   )
-}
+};
 
 export default CountClear;
