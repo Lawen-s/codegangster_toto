@@ -24,7 +24,7 @@ const TodoList = ({}) => {
 
   return (
     <React.Fragment>
-      <div>
+      <div className="home__container">
         <Header />
         <Filterbar datas={datas} setDatas={setDatas} />
         <MakeTodo datas={datas} setDatas={setDatas} />

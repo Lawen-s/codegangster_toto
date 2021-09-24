@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import TodoList from './pages/TodoList';

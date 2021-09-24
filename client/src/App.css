@@ -20,6 +20,10 @@ main {
   border-radius: 40px;
 }
 
+section {
+  height: 1200px;
+}
+
 .listPart {
   display: block;
   min-width: 100%;

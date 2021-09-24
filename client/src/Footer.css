@@ -1,4 +1,5 @@
 .copyright {
-  text-align: right;
-  margin-bottom: 5px;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
 }
