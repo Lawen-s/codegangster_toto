@@ -1,0 +1,192 @@
+.loginTodolist__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.loginTodolist__logo {
+  font-family: 'AVENGEANCE HEROIC AVENGER AT';
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  line-height: 60px;
+}
+
+.loginTodolist__inputField {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 3px gray;
+  border-radius: 15px;
+  padding: 50px;
+  padding-bottom: 55px;
+  width: 450px;
+}
+
+.loginTodolist__inputId {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: solid 3px gray;
+  border-bottom: none;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 10px;
+  padding-right: 25px;
+  max-width: 120vw;
+}
+
+.loginTodolist__inputPassword {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: solid 3px gray;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 10px;
+  padding-right: 25px;
+  max-width: 120vw;
+}
+
+.userId {
+  max-width: 90%;
+  font-size: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 8px;
+  border-bottom: none;
+  box-shadow: gray 2px 2px 2px;
+  transition: 600ms ease all;
+  padding: 5px;
+  padding-left: 10px;
+  font-family: 'coolvetica condensed rg';
+}
+
+.userId:focus {
+  background-color: #fdffb6;
+}
+
+.password {
+  max-width: 90%;
+  height: 60px;
+  font-size: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 8px;
+  border-bottom: none;
+  box-shadow: gray 2px 2px 2px;
+  transition: 600ms ease all;
+  padding: 5px;
+  padding-left: 10px;
+  font-family: 'coolvetica condensed rg';
+}
+
+.password:focus {
+  background-color: #fdffb6;
+}
+
+.fa-user {
+  font-size: 30px;
+  text-align: left;
+  margin-right: 6px;
+}
+
+.fa-unlock-alt {
+  font-size: 30px;
+  position: relative;
+  margin-right: 6px;
+}
+
+.loginTodolist__BtnContainer {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: -15px;
+}
+
+.loginBtn {
+  font-family: 'AVENGEANCE HEROIC AVENGER AT';
+  flex-wrap: nowrap;
+  background: #ffc8dd;
+  border: solid;
+  position: relative;
+  border-radius: 10px;
+  height: 58px;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  box-shadow: gray 2px 2px 2px;
+  width: 80vw;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.loginBtn:hover {
+  background: #fffffc;
+  box-shadow: gray 6px 6px 6px;
+}
+
+.loginBtn:before,
+.loginBtn:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  transition: ease all;
+}
+
+.loginBtn:hover:before,
+.loginBtn:hover:after {
+  width: 100%;
+  transition: ease all;
+}
+
+.loginBtn:active {
+  box-shadow: none;
+}
+
+.singUpBtn {
+  font-family: 'AVENGEANCE HEROIC AVENGER AT';
+  flex-wrap: nowrap;
+  background: #ffc8dd;
+  border: solid;
+  position: relative;
+  border-radius: 10px;
+  height: 58px;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  box-shadow: gray 2px 2px 2px;
+  width: 80vw;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.singUpBtn:hover {
+  background: #fffffc;
+  box-shadow: gray 6px 6px 6px;
+}
+
+.singUpBtn:before,
+.singUpBtn:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  transition: ease all;
+}
+
+.singUpBtn:hover:before,
+.singUpBtn:hover:after {
+  width: 100%;
+  transition: ease all;
+}
+
+.singUpBtn:active {
+  box-shadow: none;
+}
+
+.footer {
+  margin-top: 15px;
+}

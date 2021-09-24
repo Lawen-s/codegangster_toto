@@ -58,7 +58,6 @@ const MakeTodo = ({ datas, setDatas }) => {
           dateFormat="yyyy년 MM월 dd일"
           minDate={new Date()}
         ></DatePicker>
-        {/* ! 나 이부분 수정함!! 내일 말 하셈!!! 진짜 리얼로!! */}
         {message ? (
           <button className="MakeTodo_input--submit" onClick={addTodoClick}>
             ADD
@@ -72,7 +71,6 @@ const MakeTodo = ({ datas, setDatas }) => {
           </button>
         )}
       </div>
-      {/* 여기로 왔다!!!!!!!! */}
       <div className="MakeTodo_input--message">
         <input
           className="input_message"
@@ -82,7 +80,6 @@ const MakeTodo = ({ datas, setDatas }) => {
           placeholder="일정을 입력하세요"
         ></input>
       </div>
-      {/* 여기있던 div */}
     </div>
   );
 };

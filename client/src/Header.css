@@ -8,6 +8,11 @@
   height: auto;
 }
 
+.Link__login {
+  margin-left: auto;
+  margin-right: 35px;
+}
+
 .fa-user-circle {
   margin: 10px;
   padding-left: 15px;
@@ -23,15 +28,11 @@
   background: #fffffc;
   border: solid;
   border-radius: 15px;
-  position: relative;
   height: 35px;
   padding: 0 2em;
   cursor: pointer;
   transition: 800ms ease all;
-  outline: none;
   box-shadow: gray 2px 2px 2px;
-  margin-left: auto;
-  margin-right: 30px;
 }
 
 .btn--logout:hover {
@@ -41,7 +42,7 @@
 
 .btn--logout:before,
 .btn--logout:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 0;
   transition: ease all;

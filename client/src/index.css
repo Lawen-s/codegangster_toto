@@ -1,7 +1,21 @@
 @font-face {
-  font-family: "BMHANNAPro";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff")
-    format("woff");
+  font-family: 'BMHANNAPro';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.0/BMHANNAPro.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AVENGEANCE HEROIC AVENGER AT';
+  src: url('./fonts/AVENGEANCE\ HEROIC\ AVENGER\ AT.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'coolvetica condensed rg';
+  src: url('./fonts/coolvetica\ condensed\ rg.ttf') format('woff');
   font-weight: normal;
   font-style: normal;
 }

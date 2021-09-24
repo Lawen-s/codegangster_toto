@@ -1,0 +1,97 @@
+.loginTodolist__container {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vw;
+}
+
+.loginTodolist__verifyPassword {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: solid 3px gray;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 10px;
+  padding-right: 25px;
+  max-width: 120vw;
+  border-top: none;
+}
+
+.loginTodolist__email {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border: solid 3px gray;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  padding-left: 10px;
+  padding-right: 25px;
+  max-width: 120vw;
+  border-top: none;
+}
+
+.email {
+  max-width: 90%;
+  font-size: 35px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 8px;
+  box-shadow: gray 2px 2px 2px;
+  transition: 600ms ease all;
+  padding: 5px;
+  padding-left: 10px;
+  font-family: 'coolvetica condensed rg';
+}
+
+.email:focus {
+  background-color: #fdffb6;
+}
+
+.fa-envelope-open-text {
+  font-size: 30px;
+  position: relative;
+  margin-right: 6px;
+}
+
+.fa-lock {
+  font-size: 30px;
+  position: relative;
+  margin-right: 6px;
+}
+
+.validation__check__complicatedPassword {
+  display: none;
+  color: red;
+  margin: 15px;
+  margin-bottom: -10px;
+}
+
+.validation__check__worngEmail {
+  display: none;
+  color: red;
+  margin: 15px;
+  margin-bottom: -10px;
+}
+
+.validation__check__wrongPassword {
+  display: none;
+  color: red;
+  margin: 15px;
+  margin-bottom: -10px;
+}
+
+.validation__check__matchIdPassword {
+  display: none;
+  color: red;
+  margin: 15px;
+  margin-bottom: -10px;
+}
+
+.validation__check__notMatchPassword {
+  display: none;
+  color: red;
+  margin: 15px;
+  margin-bottom: -10px;
+}
