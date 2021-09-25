@@ -8,6 +8,7 @@ module.exports = {
       userId: 'kimcoding',
       password: '1234',
       email: 'kimcoding@home.com',
+      salt: '564635321321',
       createdAt: new Date(),
       updatedAt: new Date(),
       },
