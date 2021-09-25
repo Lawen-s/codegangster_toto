@@ -10,7 +10,6 @@ const CountClear = ({ datas, setDatas }) => {
   };
 
   return (
-
     <div className="count_Container">
       {!datas.length ? <span className="span--remainTodos">비어있어요!</span>
         : <span className="span--remainTodos">남은 할 일: {datas.length}</span>}
